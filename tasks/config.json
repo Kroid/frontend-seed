@@ -1,8 +1,0 @@
-{
-  "app_dir": "../app/",
-  "tmp_dir": "../.tmp/",
-  "layout": "index.jade",
-  "styles": "**/app.scss",
-  "scripts": ["**/*.js", "!**/*_test.js"],
-  "templates": ["**/*.jade", "!index.jade"]
-}

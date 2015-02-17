@@ -1,14 +1,19 @@
-var path = require('path');
-
-var gulp = require('gulp');
 var clean = require('gulp-clean');
 
-var config  = require(__dirname + '/config.json');
-var tmp_dir = path.join(__dirname, config.tmp_dir);
 
+gulp.task('clean', ['clean:tmp', 'clean:dst']);
 
-gulp.task('clean', function() {
+gulp.task('clean:tmp', function() {
+  dir = path.join(config.root, config.tmp);
   gulp
-    .src(tmp_dir, {read: false})
+    .src(dir, {read: false})
     .pipe(clean());
 });
+
+gulp.task('clean:dst', function() {
+  dir = path.join(config.root, config.dst);
+  gulp
+    .src(dir, {read: false})
+    .pipe(clean());
+});
+
