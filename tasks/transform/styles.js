@@ -2,7 +2,7 @@ var sass = require('gulp-sass');
 var autoprefixer = require('gulp-autoprefixer');
 var plumber = require('gulp-plumber');
 
-var src  = join(config.root, config.app, config.styles)
+var src  = join(config.root, config.app, config.styles);
 var dest = join(config.root, config.tmp);
 
 
