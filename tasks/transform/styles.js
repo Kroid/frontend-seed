@@ -1,17 +1,7 @@
-var _ = require('underscore');
 var sass = require('gulp-sass');
 
-var styles = config.styles
-
-if (!_.isArray(styles)) {
-  styles = [styles]
-}
-
-var src = _.map(styles, function(filepath) {
-  return path.join(config.root, config.app, filepath)
-});
-
-var dest = path.join(config.root, config.tmp);
+var src  = join(config.root, config.app, config.styles)
+var dest = join(config.root, config.tmp);
 
 
 gulp.task('transform:styles', function() {

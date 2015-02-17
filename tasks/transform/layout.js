@@ -1,5 +1,5 @@
-var src  = path.join(config.root, config.app, config.layout);
-var dest = path.join(config.root, config.tmp);
+var src  = join(config.root, config.app, config.layout);
+var dest = join(config.root, config.tmp);
 
 
 gulp.task('transform:layout', function() {
