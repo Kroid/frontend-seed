@@ -12,7 +12,7 @@ global.config = {
     '**/*.js',
     '!**/*_test.js'
   ],
-  styles: '**/app.scss',
+  styles: 'app.scss',
   templates: [
     '**/*.jade',
     '!index.jade'
